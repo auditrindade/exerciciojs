@@ -71,3 +71,9 @@ let produto2 = parseFloat (prompt("digite o valor do segundo produto2"));
 let soma = produto1 + produto2;
 
 console.log (soma)
+
+// % quando for calcular numeros impar ou par.
+
+//.tofixed serve pra formatar as casas decimais de uma variavel.
+
+//tratar dats com comando date.
