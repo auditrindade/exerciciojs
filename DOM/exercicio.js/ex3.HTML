@@ -1,0 +1,37 @@
+<!-- 3 - Fechar a página, voltar, mostrar sua localização  -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+</head>
+<body>
+    <button onclick="voltarPagina()">Voltar</button>
+    <button onclick="fecharPagina()">Fechar a pagina</button>
+    <button onclick="mostrarLocalizacao()">Mostrar localizacao</button>
+
+    <script>
+        function voltarPagina(){
+            //Voltar uma pagina do navegador
+            window.history.back();
+        }
+
+        function mostrarLocalizacao(){
+            //Mostrar a URL atual da pagina
+            alert("Sua pagina esta localizada: " + window.location);
+        }
+
+        function fecharPagina(){
+           
+            //fechar janela do navegador
+            window.close();
+        }
+    </script>
+
+
+
+
+</body>
+</html>
