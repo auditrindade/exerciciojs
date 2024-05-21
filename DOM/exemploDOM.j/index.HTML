@@ -25,3 +25,44 @@
 
 </body>
 </html>
+
+Claro! Aqui está um exemplo de código em JavaScript para adicionar e remover itens de uma lista:
+
+```html
+<!DOCTYPE html>
+<html>
+<body>
+
+<input type="text" id="itemInput">
+<button onclick="adicionarItem()">Adicionar</button>
+
+<ul id="listaItens">
+</ul>
+
+<script>
+function adicionarItem() {
+  var input = document.getElementById("itemInput");
+  var item = input.value;
+  
+  if (item === "") {
+    alert("Digite um item para adicionar à lista.");
+    return;
+  }
+  
+  var lista = document.getElementById("listaItens");
+  
+  // Criar um novo elemento li
+  var novoItem = document.createElement("li");
+  
+  // Definir o texto do novo item
+  novoItem.innerText = item;
+  
+  // Adicionar o novo item à lista
+  lista.appendChild(novoItem);
+  
+  // Limpar o campo de entrada
+   input.value= "";
+}
+
+function removerItem(item) {
+   // Remover o item da lista

@@ -50,5 +50,9 @@ for(let indice = 0; indice < 5; indice ++){
 }
 
 
+let num = 10 
 
+//while => enquanto
+
+// do while => fazer enquanto
 
